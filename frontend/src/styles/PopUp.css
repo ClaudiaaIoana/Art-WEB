@@ -1,0 +1,62 @@
+.box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px; /* Max width of the box */
+    max-height: 60%;
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgb(255, 255, 255);
+    padding: 5%; /* Adjust padding using percentage */
+    margin: 20px auto; /* Add top and bottom margin, auto left and right margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    align-self: center;
+    z-index: 1;
+    visibility: visible;
+}
+
+.close_button {
+    position: absolute;
+    top: 5%; /* Adjust the top position as needed */
+    right: 5%; /* Adjust the right position as needed */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main_button,
+.second_button {
+    width: 40%; /* Adjust button width using percentage */
+    margin: 0 auto;
+    display: block;
+    padding: 3%; /* Adjust padding using percentage */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.second_button {
+    background-color: transparent;
+    color: #000850;
+}
+
+.main_button:hover {
+    background-color: #002b59;
+}
+
+.text {
+    color: #002b59;
+    font-size: 25px; /* Adjust font size using vw (viewport width) */
+    text-align: center;
+    padding: 5% 0; /* Adjust padding using percentage */
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+

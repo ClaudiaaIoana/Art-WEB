@@ -1,0 +1,108 @@
+.admin-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.admin-page header {
+    background-color: rgba(51, 51, 51, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.admin-page h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.admin-page main {
+    margin-top: 20px;
+}
+
+.manage-users, .manage-auctions, .statistics, .not-found {
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.manage-users h2, .manage-auctions h2, .statistics h2, .not-found h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dddddd7c;
+}
+
+.info-table th.idth,
+.info-table td.idtd {
+    width: 40px; /* Set width of ID column */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #dddddd7c;
+    color: black;
+    font-size: 14px; /* Adjust the font size */
+}
+
+.info-table th.simpleth,
+.info-table td.simpletd {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #dddddd7c;
+    border-top: 1px solid #dddddd7c;
+    color: black;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    font-size: 14px; /* Adjust the font size */
+}
+
+/* Adjust button size */
+.action-button {
+    padding: 5px 8px; /* Adjust button padding */
+    min-width: unset; /* Remove minimum width */
+    white-space: nowrap; /* Prevent button text from wrapping */
+    background-color: #007bff;
+    color: azure;
+    border: none;
+    margin: 3px;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.manage-users input[type="text"],
+.manage-auctions input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.manage-users input[type="text"]::placeholder,
+.manage-auctions input[type="text"]:placeholder {
+    color: #aaa;
+}
+
+.not-found {
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+}

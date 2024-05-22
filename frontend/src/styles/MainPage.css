@@ -1,0 +1,129 @@
+/* Styles for the header */
+.window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    align-items: center;
+    background-color: rgb(167, 178, 216);
+}
+
+.header {
+    background-color: #05002a;
+    color: white;
+    padding: 10px; /* Fixed padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px; /* Fixed height */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    height: 100%; /* Ensure the logo div takes the full height of the header */
+}
+
+.logo img {
+    max-height: 100%; /* Make the image fit the height of the logo div */
+    width: auto;
+}
+
+.navbar {
+    background-color: #000a58;
+    color: white;
+    padding: 10px; /* Fixed padding */
+    height: 30px; /* Fixed height */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 0px;
+    border-color: #ffffff99;
+}
+
+/* Styles for the main content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-height: 100%; 
+    overflow-y: auto;
+    width: 100%;
+    color: white;
+}
+
+.contact-area {
+    position: relative;
+    bottom: 0px;
+    right: 0;
+    background-color:  #05002a;
+    padding: 30px;
+    width: calc(100% - 20px); /* Fixed width */
+    margin-bottom: 0;
+    color: white;
+}
+
+.simple_button {
+    height: 90%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.home_button {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.user {
+    display: flex; /* Make the user container a flex container */
+    align-items: center; /* Center the child elements vertically */
+    width: auto;
+    height: 100%;
+    overflow: hidden; /* Hide any content that overflows */
+}
+
+.user_button {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 3px;
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Display an ellipsis (...) when text overflows */
+    overflow: hidden; /* Hide any text that overflows */
+}
+
+.nav_button {
+    background-color: #000a5800;
+    color: #fff;
+    border: #000a5800;
+    max-height: 100%;
+    max-height: 100%;
+    flex: 1; /* Allow the button to grow and fill the available space */
+    overflow: hidden; /* Hide any content that overflows */
+}

@@ -1,0 +1,117 @@
+.add-post {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .add-post h2 {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    max-width: 100%; /* Limit width to 100% of the container */
+    min-width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-height: 200px; /* Maximum height */
+    overflow-y: auto; /* Add scrollbar when content exceeds height */
+  }
+  
+  .form-group button[type="button"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff8c;
+    color: #000000;
+    border: none;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    width: 24px; /* Set width */
+    height: 24px; /* Set height */
+    border-radius: 10%;
+    cursor: pointer;
+    align-items: center;
+    font-size: 22px;
+  }
+  
+  .form-group button[type="button"]:hover {
+    background-color: #cc000081;
+  }
+  
+  .form-group input[type="file"] {
+    display: none;
+  }
+  
+  .form-group img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .form-group .photos-container {
+    margin-top: 10px;
+  }
+  
+  .form-group .photo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .add-photo-label {
+    cursor: pointer;
+    background-color: #007bff00;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .photo-thumbnails-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .photo-thumbnail-container {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .photo-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  

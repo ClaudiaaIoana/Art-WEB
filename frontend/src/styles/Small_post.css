@@ -1,0 +1,155 @@
+
+.bid-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+}
+
+.bid-card {
+  height: 400px; /* Set a fixed height for the bid card */
+  max-width: 80%;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 7px #05002ab0;/*,-0.1em 0 .4em #05002ab0;*/
+  color: black;
+}
+
+.bid-image {
+  width: 100%;
+  height: 75%; /* Reserve 90% of the bid card height for the image */
+  object-fit: contain; /* Maintain image aspect ratio */
+}
+
+.bid-data{
+  height: 12%;
+  margin: 0px;
+}
+
+.bid-data p{
+  margin: 0px;
+  background-color: #05002a00;
+}
+
+.bid-data p span.title{
+  font-size: 25px;
+  padding: 10px;
+  background-color: #05002a00;
+  color: black;
+}
+
+.bid-data p span.username{
+  font-size: 12px;
+  margin-left: auto; 
+}
+
+.bid-details {
+  align-self:last baseline;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 10px;
+  height: 10%; 
+}
+
+.current-bid {
+  margin-top: 0px;
+  font-size: 24px;
+  margin-left: auto; /* Push current bid to the right */
+}
+
+.like-count {
+  margin-left: 10px; /* Add space between like button and count */
+  font-size: 24px;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.like-button img {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px; /* Move the image 3px lower */
+}
+
+.like-button:hover img {
+  transform: scale(1.25); /* Increase scale to 125% */
+}
+
+/* CSS for search bar */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  width: 50%;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.button-container > div {
+  margin-right: 10px;
+}
+
+/* Dropdown styling */
+.react-select-container {
+  width: 200px; /* Adjust width as needed */
+}
+
+.react-select__menu {
+  position: absolute;
+  z-index: 1000;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.button-container > div {
+  margin-right: 10px;
+}
+
+/* Dropdown styling */
+.react-select-container {
+  width: 200px; /* Adjust width as needed */
+}
+
+.react-select__menu {
+  position: absolute;
+  z-index: 1000;
+}
+
+.react-select__menu-list {
+  color: black;
+}
+

@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  width: 100%; /* Set width to 100% */
+  background-color: rgba(0, 0, 0, 0.578);
+  padding: 2vw 1vw; /* Using vw for padding */
+  border-radius: 10px 10px 5px 5px;
+  font-size: 20px; /* Using vw for font-size */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 20px;
+  color: white;
+}
+
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30vw; /* Using vw for width */
+  padding: 2vw 1vw; /* Using vw for padding */
+  background-color: rgb(250, 194, 194);
+  border-radius: 0 0 10px 10px;
+}
+
+input {
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 10px;
+  padding: 1vw 1vw; /* Using vw for padding */
+  outline: none;
+  margin: 0.5vw; /* Using vw for margin */
+}

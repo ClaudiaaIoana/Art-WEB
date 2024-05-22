@@ -1,0 +1,92 @@
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8em;
+    margin-right: 10px;
+    flex: 0 0 auto; /* Ensure labels don't grow */
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Set width to 100% by default */
+}
+
+.input-group input {
+    flex: 1; /* Allow input to expand and take up remaining space */
+}
+
+.register_title {
+    text-align: center;
+    width: calc(100% ); /* Set width to 100% minus the padding on both sides */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-bottom: 10px;
+    z-index: 999; 
+}
+
+.wrap_box {
+    border-radius: 10px 10px 10px 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255);
+    width: calc(50%); /* Set width to 100% minus the padding on both sides */
+    padding: 30px; /* Match the padding of the title */
+    margin: 20px; /* Add top and bottom margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    position: absolute;
+    top:110px;
+    left:25%;
+    z-index: 3;
+}
+
+.register_button {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change_button {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    background-color: #ffffff00;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register_button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .input-group label {
+        width: 100%; /* Set label width to 100% when screen is narrow */
+    }
+
+    .input-group input {
+        width: 100%; /* Set input width to 100% when screen is narrow */
+    }
+    .wrap_box{
+        width: 80%;
+        left: 10%;
+    }
+}

@@ -1,0 +1,10 @@
+
+.graphStyle {
+  min-height: 350px;
+  max-width: 100%; 
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  border-radius: 30%;
+  padding: 30px;
+  margin: 10px;
+}

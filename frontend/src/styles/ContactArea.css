@@ -1,0 +1,96 @@
+/* ContactArea.css */
+
+.contact-area {
+    background-color: #05002a;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-area h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-info,
+.form-container {
+    width: 45%; /* Adjust width for two columns with 10px margin */
+    margin-bottom: 20px; /* Add margin between items */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.map-container {
+    max-width: 100%;
+}
+
+.contact-info {
+    border-right: 1px solid #ccc; /* Add thin line to separate columns */
+    padding-right: 10px; /* Add padding to the right to separate columns */
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: azure;
+}
+
+.form-input input[type="text"],
+.form-input input[type="email"],
+.form-input textarea {
+    width: calc(100% - 30px); /* Adjust width for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: #cccccc00;
+    min-width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    color: azure;
+}
+
+
+.form-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container	 button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .contact-info,
+    .form-container {
+        width: 100%; /* Set width to 100% on narrow screens */
+        border-right: none; /* Remove right border on narrow screens */
+        padding-right: 0; /* Remove padding on narrow screens */
+    }
+}
+
